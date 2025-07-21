@@ -5,6 +5,6 @@ draft = false
 tags = ["touring", "sumatera"]
 categories = ["petualangan"]
 +++
-<p style="text-align: center;">
-<img src="/images/hutan.jpg" alt="Hutan" style="max-width: 100%; height: auto;" />
+![Pantai Sumba](static/images/hutan.jpg)
+
 wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. 
