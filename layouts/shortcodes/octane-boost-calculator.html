@@ -1,0 +1,133 @@
+<style>
+  .octane-card {
+    background-color: var(--bg);
+    color: var(--fg);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+    margin: auto;
+    font-family: system-ui, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .octane-card select,
+  .octane-card input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    background-color: var(--input-bg);
+    color: var(--fg);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .octane-card strong {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .octane-row {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .octane-row i {
+    font-size: 1.2rem;
+    color: var(--fg);
+  }
+
+  .octane-card a {
+    font-size: 0.9rem;
+    color: var(--link);
+    display: inline-block;
+    margin-top: 0.75rem;
+    text-decoration: none;
+  }
+
+  .octane-card a:hover {
+    text-decoration: underline;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1c;
+      --fg: #f0f0f0;
+      --input-bg: #2a2a2a;
+      --link: #5fa9ff;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fff;
+      --fg: #111;
+      --input-bg: #fff;
+      --link: #0066cc;
+    }
+  }
+</style>
+
+<div class="octane-card">
+  <label>
+    <div class="octane-row">
+      <i class="fa-solid fa-bottle-droplet"></i>
+      Pilih Merk Octane Booster:
+    </div>
+    <select id="boosterSelect" onchange="calculateBooster()">
+      <option value="200/60">STP Octane Booster (200ml/60L)</option>
+      <option value="250/40">V-Octane (250ml/40L)</option>
+      <option value="148/60">Bardahl (148ml/60L)</option>
+      <option value="250/100">Lupromax Accelerator (250ml/100L)</option>
+      <option value="473/60">Prestone (473ml/60L)</option>
+      <option value="59/12">Lucas Oil (59ml/12L)</option>
+      <option value="150/50">Liqui Moly Octane Plus (150ml/50L)</option>
+    </select>
+  </label>
+
+  <label>
+    <div class="octane-row">
+      <i class="fas fa-gas-pump"></i>
+      Jumlah Bensin (liter):
+    </div>
+    <input type="number" id="fuelInput" value="2" oninput="calculateBooster()" min="0">
+  </label>
+
+  <strong><i class="fas fa-fill-drip"></i> <span id="result"></span></strong>
+  <div id="shopLink"></div>
+</div>
+<br>
+
+<script>
+  const links = {
+    "200/60": "https://tokopedia.link/STP",
+    "250/40": "https://tokopedia.link/V-Octane",
+    "148/60": "https://tokopedia.link/Bardahl",
+    "250/100": "https://tokopedia.link/Lupromax",
+    "473/60": "https://tokopedia.link/Prestone",
+    "59/12": "https://tokopedia.link/LucasOil",
+    "150/50": "https://tokopedia.link/LiquiMoly"
+  };
+
+  function calculateBooster() {
+    const booster = document.getElementById("boosterSelect").value;
+    const fuel = parseFloat(document.getElementById("fuelInput").value);
+    const [ml, liter] = booster.split("/").map(Number);
+    if (!isNaN(fuel) && fuel > 0) {
+      const dosage = (ml / liter) * fuel;
+      document.getElementById("result").textContent = `Gunakan sekitar ${dosage.toFixed(1)} ml octane booster.`;
+      document.getElementById("shopLink").innerHTML = `<a href="${links[booster]}" target="_blank"><i class="fas fa-cart-shopping"></i> Beli booster ini di Tokopedia</a>`;
+    } else {
+      document.getElementById("result").textContent = "";
+      document.getElementById("shopLink").innerHTML = "";
+    }
+  }
+
+  window.onload = calculateBooster;
+</script>

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div id="map" style="height: 400px;"></div>
+
+<script>
+  function initMap() {
+    const myLatLng = { lat: -6.1754, lng: 106.8272 }; // contoh Monas
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 10,
+      center: myLatLng,
+    });
+
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+      title: "Lokasi Touring!",
+    });
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt5TkeMYDhH1c9W4M04DHr30lV0ik_dCY&callback=initMap">
+</script>
+{{ end }}

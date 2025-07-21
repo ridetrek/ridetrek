@@ -1,0 +1,28 @@
+{{ $done := .Get "done" | default "0" | int }}
+{{ $total := .Get "total" | default "1" | int }}
+
+{{ $percent := 0 }}
+{{ if gt $total 0 }}
+  {{ $percent = div (mul $done 100) $total }}
+{{ end }}
+
+<div style="margin-bottom: 1rem;">
+  <div style="
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 20px;
+    position: relative;
+  ">
+    <div style="
+      background-color: #4CAF50;
+      width: {{ $percent }}%;
+      min-width: {{ if and (gt $percent 0) (lt $percent 8) }}8%{{ else }}{{ $percent }}%{{ end }};
+      height: 100%;
+      transition: width 0.5s ease-in-out;
+    "></div>
+  </div>
+  <p style="margin-top: 0.3rem; font-size: 0.9rem;">
+    {{ $done }} dari {{ $total }} lokasi ({{ $percent }}%)
+  </p>
+</div>

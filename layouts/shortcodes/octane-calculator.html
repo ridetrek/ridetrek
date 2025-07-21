@@ -1,0 +1,116 @@
+<!-- Octane Boost Calculator Shortcode HTML (Hugo-ready) -->
+<style>
+  .octane-calculator {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: var(--bg);
+    color: var(--text);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+  }
+
+  .octane-calculator h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .octane-calculator label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  .octane-calculator input,
+  .octane-calculator select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text);
+  }
+
+  .octane-calculator button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .octane-calculator button:hover {
+    background-color: #005f99;
+  }
+
+  .octane-result {
+    margin-top: 1.5rem;
+    font-weight: bold;
+  }
+
+  :root {
+    --bg: #ffffff;
+    --text: #000000;
+    --input-bg: #f7f7f7;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1e1e1e;
+      --text: #ffffff;
+      --input-bg: #2a2a2a;
+    }
+  }
+</style>
+
+<div class="octane-calculator">
+  <h2>Kalkulator Octane Booster</h2>
+
+  <label for="fuelVolume">Total Volume Bensin (liter):</label>
+  <input type="number" id="fuelVolume" placeholder="Contoh: 10" min="0">
+
+  <label for="boosterBrand">Pilih Merek Octane Booster:</label>
+  <select id="boosterBrand">
+    <option value="STP">STP Octane Booster (200ml / 60L)</option>
+    <option value="VOctane">V-Octane (250ml / 40L)</option>
+    <option value="Bardahl">Bardahl (148ml / 60L)</option>
+    <option value="Lupromax">Lupromax Accelerator (250ml / 100L)</option>
+    <option value="Prestone">Prestone (473ml / 60L)</option>
+    <option value="LucasOil">Lucas Oil (59ml / 12L)</option>
+    <option value="LiquiMoly">Liqui Moly (150ml / 50L)</option>
+  </select>
+
+  <button onclick="calculateBooster()">Hitung Booster</button>
+  <div class="octane-result" id="result"></div>
+</div>
+
+<script>
+  const boosterRatios = {
+    STP: { ml: 200, liter: 60 },
+    VOctane: { ml: 250, liter: 40 },
+    Bardahl: { ml: 148, liter: 60 },
+    Lupromax: { ml: 250, liter: 100 },
+    Prestone: { ml: 473, liter: 60 },
+    LucasOil: { ml: 59, liter: 12 },
+    LiquiMoly: { ml: 150, liter: 50 }
+  };
+
+  function calculateBooster() {
+    const fuelVolume = parseFloat(document.getElementById('fuelVolume').value);
+    const brand = document.getElementById('boosterBrand').value;
+    const ratio = boosterRatios[brand];
+
+    if (isNaN(fuelVolume) || fuelVolume <= 0) {
+      document.getElementById('result').innerText = "Masukkan volume bensin yang valid.";
+      return;
+    }
+
+    const requiredBooster = (fuelVolume / ratio.liter) * ratio.ml;
+    document.getElementById('result').innerText = `Kamu perlu sekitar ${requiredBooster.toFixed(1)} ml octane booster merek ${brand}.`;
+  }
+</script>

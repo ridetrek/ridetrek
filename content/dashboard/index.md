@@ -1,0 +1,12 @@
++++
+layout = "page"
+url = "/dashboard/"
++++
+
+## Progress Perjalanan
+
+{{< progressbar done=2 total=10 >}}
+
+Berikut adalah rute touring saya di Sumatera:
+
+{{< gmap src="https://www.google.com/maps/d/u/0/embed?mid=12PIEQCo3BPeiWgoRGaRQAzdwnh7BCVQ&ehbc=2E312F" height="500" >}}
