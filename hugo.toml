@@ -136,18 +136,6 @@ url = "/octanebooster/"
 weight = 10
 
 [[menu.main]]
-identifier = "categories"
-name = "categories"
-url = "/categories/"
-weight = 10
-
-[[menu.main]]
-identifier = "tags"
-name = "tags"
-url = "/tags/"
-weight = 20
-
-[[menu.main]]
 identifier = "Instagram"
 name = "My Instagram"
 url = "https://instagram.com/sipapadjohan"
