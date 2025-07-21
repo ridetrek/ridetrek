@@ -14,8 +14,6 @@ minifyOutput = true
 
 [params]
 ShowPostThumbnail = true
-ShowPostCover = true
-ShowBreadCrumbs = true
 extendHead = true
 customHead = "partials/extend_head.html"
 customCSS = ["css/custom.css"]
