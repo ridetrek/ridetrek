@@ -12,12 +12,8 @@ relative = true
 +++
 
 
-<div style="display: flex; align-items: flex-start; gap: 16px;">
-  <img src="/images/hutan.jpg" width="200" alt="Di Hutan" style="border-radius: 8px;"/>
+<img src="/images/hutan.jpg" alt="Di Hutan" width="200" style="float: left; margin-right: 16px; border-radius: 8px;" />
 
-  <div>
-    <p>
-      Wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. Tapi view hutan begini bikin rasa lelah jadi terbayar juga.
-    </p>
+Wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. Tapi view hutan begini bikin rasa lelah jadi terbayar juga.
   </div>
 </div>
