@@ -2,9 +2,13 @@
 title = "Hari ke-2 Touring Sumatera"
 date = 2025-07-21T10:05:00+07:00
 draft = false
-featured_image = "/images/hutan.jpg"
 tags = ["touring", "sumatera"]
 categories = ["petualangan"]
+[cover]
+image = "/images/hutan.jpg"
+alt = "Motoran di Sumba"
+caption = "Sunrise di Bukit Wairinding"
+relative = true
 +++
 
 

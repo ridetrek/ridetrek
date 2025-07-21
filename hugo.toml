@@ -14,6 +14,8 @@ minifyOutput = true
 
 [params]
 ShowPostThumbnail = true
+ShowPostCover = true
+ShowBreadCrumbs = true
 extendHead = true
 customHead = "partials/extend_head.html"
 customCSS = ["css/custom.css"]
@@ -98,9 +100,9 @@ SiteVerificationTag = "XYZabc"
 SiteVerificationTag = "XYZabc"
 
   [params.cover]
-  hidden = true
-  hiddenInList = true
-  hiddenInSingle = true
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
 
   [params.editPost]
   URL = "https://github.com/<path_to_repo>/content"
