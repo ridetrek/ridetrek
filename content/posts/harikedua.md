@@ -12,5 +12,12 @@ relative = true
 +++
 
 
-![Di Hutan](/images/hutan.jpg)
-wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. 
+<div style="display: flex; align-items: flex-start; gap: 16px;">
+  <img src="/images/hutan.jpg" width="200" alt="Di Hutan" style="border-radius: 8px;"/>
+
+  <div>
+    <p>
+      Wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. Tapi view hutan begini bikin rasa lelah jadi terbayar juga.
+    </p>
+  </div>
+</div>
