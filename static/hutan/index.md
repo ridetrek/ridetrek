@@ -1,6 +1,6 @@
 +++
 title = "Camping di Sumba"
-date = 2025-07-21T08:00:00+07:00
+date = 2025-07-20T08:00:00+07:00
 draft = false
 tags = ["camping", "sumba", "motoran"]
 categories = ["Perjalanan"]
