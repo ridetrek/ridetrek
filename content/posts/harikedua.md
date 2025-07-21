@@ -12,8 +12,6 @@ relative = true
 +++
 
 
-<img src="/images/hutan.jpg" alt="Di Hutan" width="200" style="float: left; margin-right: 16px; border-radius: 8px;" />
-
+{{< sideimg src="/images/hutan.jpg" width="200" >}}
 Wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. Tapi view hutan begini bikin rasa lelah jadi terbayar juga.
-  </div>
-</div>
+{{< /sideimg >}}

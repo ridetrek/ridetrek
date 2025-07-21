@@ -1,0 +1,6 @@
+<div style="display: flex; align-items: flex-start; gap: 16px;">
+  <img src="{{ .Get "src" }}" width="{{ .Get "width" | default "200" }}" style="border-radius: 8px;" />
+  <div>
+    {{ .Inner }}
+  </div>
+</div>
