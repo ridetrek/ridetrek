@@ -5,7 +5,7 @@ url = "/dashboard/"
 
 ## Progress Perjalanan
 
-{{< progressbar done=2 total=10 >}}
+{{< progressbar done=0 total=10 >}}
 
 Berikut adalah rute touring saya di Sumatera:
 
