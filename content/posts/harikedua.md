@@ -6,5 +6,5 @@ tags = ["touring", "sumatera"]
 categories = ["petualangan"]
 +++
 <p style="text-align: center;">
-<img src="/static/images/hutan.jpg" alt="Hutan" style="max-width: 100%; height: auto;" />
+<img src="/images/hutan.jpg" alt="Hutan" style="max-width: 100%; height: auto;" />
 wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. 
