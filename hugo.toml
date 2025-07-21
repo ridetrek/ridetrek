@@ -13,6 +13,7 @@ disableXML = true
 minifyOutput = true
 
 [params]
+ShowPostThumbnail = true
 extendHead = true
 customHead = "partials/extend_head.html"
 customCSS = ["css/custom.css"]
