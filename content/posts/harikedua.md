@@ -5,4 +5,7 @@ draft = false
 tags = ["touring", "sumatera"]
 categories = ["petualangan"]
 +++
+
+
+![Di Hutan](/images/hutan.jpg)
 wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. 
