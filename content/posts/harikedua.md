@@ -11,7 +11,6 @@ caption = "Sunrise di Bukit Wairinding"
 relative = true
 +++
 
+<img src="/images/hutan.jpg" class="img-inline" alt="Di Hutan" />
 
-{{< sideimg src="/images/hutan.jpg" width="200" >}}
-Wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. Tapi view hutan begini bikin rasa lelah jadi terbayar juga.
-{{< /sideimg >}}
+Wah capek bro. Panas banget nih jalanan. Gak ada warung yang jual es teh. Tapi pemandangannya keren sih. Hutan ini bener-bener bikin adem hati walau cuacanya panas.

@@ -59,3 +59,11 @@ body.dark {
   --border: #333;
   --input-bg: #2a2a2a;
 }
+
+.img-inline {
+  width: 150px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
