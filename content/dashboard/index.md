@@ -1,6 +1,9 @@
 +++
 layout = "page"
 url = "/dashboard/"
+author = false
+showEdit = false
+showMeta = false
 +++
 
 ## Progress Perjalanan
