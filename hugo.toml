@@ -15,6 +15,7 @@ minifyOutput = true
 pagerSize = 5
 
 [params]
+editPost = false
 enableSearch = true
 ShowPostThumbnail = true
 ShowPostCover = true
