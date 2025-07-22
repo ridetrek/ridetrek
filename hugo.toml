@@ -145,12 +145,6 @@ url = "/octanebooster/"
 weight = 10
 
 [[menu.main]]
-identifier = "tags"
-name = "tags"
-url = "/tags/"
-weight = 10
-
-[[menu.main]]
 identifier = "archive"
 name = "Archive"
 url = "/archive"
