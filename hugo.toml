@@ -60,10 +60,10 @@ tocopen = false
   enabled = true
   title = "Odemoto Adventure"
   subtitle = "Ride the distance"
-  imageUrl = "/images/hutan.jpg"
+  imageUrl = "/images/avatarlaode.jpg"
   imageWidth = 120
   imageHeight = 120
-  imageTitle = "my image"
+  imageTitle = "laodesidik"
 
     [[params.profileMode.buttons]]
     name = "Blog"
