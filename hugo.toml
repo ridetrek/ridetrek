@@ -65,13 +65,7 @@ tocopen = false
   imageHeight = 120
   imageTitle = "my image"
 
-    [[params.profileMode.buttons]]
-    name = "Posts"
-    url = "posts"
-
-    [[params.profileMode.buttons]]
-    name = "Tags"
-    url = "tags"
+   
 
   [params.homeInfoParams]
   Title = "Hi there 👋"
@@ -136,14 +130,6 @@ identifier = "octanebooster"
 name = "Hitung Octane Booster"
 url = "/octanebooster/"
 weight = 10
-
-[[menu.main]]
-identifier = "Instagram"
-name = "My Instagram"
-url = "https://instagram.com/sipapadjohan"
-weight = 30
-target = "_blank"
-rel = "noopener"
 
 
 [markup.highlight]
