@@ -58,7 +58,7 @@ tocopen = false
 
   [params.profileMode]
   enabled = true
-  title = "Odemoto Adventure"
+  title = "Ridetrek Adventure"
   subtitle = "Ride the distance"
   imageUrl = "/images/avatarlaode.jpg"
   imageWidth = 150
