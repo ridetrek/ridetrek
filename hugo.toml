@@ -15,6 +15,7 @@ minifyOutput = true
 pagerSize = 5
 
 [params]
+enableSearch = true
 ShowPostThumbnail = true
 ShowPostCover = true
 extendHead = true
@@ -155,9 +156,17 @@ name = "Archive"
 url = "/archive"
 weight = 40
 
+[[menu.main]]
+name = "Search"
+url = "/search"
+weight = 50
+
 [markup]
 [markup.highlight]
 noClasses = false
 
 [markup.goldmark]
 unsafe = true
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
