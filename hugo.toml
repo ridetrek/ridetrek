@@ -60,7 +60,7 @@ tocopen = false
   enabled = true
   title = "Ridetrek Adventure"
   subtitle = "Laode Sidik"
-  imageUrl = "/images/avatarlaode.jpg"
+  imageUrl = "/images/avatarlaodesidik.jpg"
   imageWidth = 150
   imageHeight = 150
   imageTitle = "laodesidik"
@@ -88,6 +88,10 @@ tocopen = false
   [[params.socialIcons]]
   name = "whatsapp"
   url = "https://wa.me/628113636123?text=Halo%20om%20Laode%21%20"
+
+  [[params.socialIcons]]
+  name = "youtube"
+  url = "#"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
