@@ -60,7 +60,7 @@ tocopen = false
   enabled = true
   title = "Odemoto Adventure"
   subtitle = "Ride the distance"
-  imageUrl = "https://i.postimg.cc/2yGgBv3M/DSC-8734.jpg"
+  imageUrl = "/static/images/hutan.jpg"
   imageWidth = 120
   imageHeight = 120
   imageTitle = "my image"
@@ -78,16 +78,16 @@ tocopen = false
   Content = "Welcome to my blog"
 
   [[params.socialIcons]]
-  name = "Instagram"
+  name = "instagram"
   url = "https://instagram.com/sipapadjohan/"
 
   [[params.socialIcons]]
-  name = "stackoverflow"
-  url = "https://stackoverflow.com"
+  name = "facebook"
+  url = "https://facebook.com/retrodalems"
 
   [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/"
+  name = "whatsapp"
+  url = "https://wa.me/628113636123?text=Halo%20om%20Laode%21%20"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
