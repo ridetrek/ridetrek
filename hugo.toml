@@ -61,8 +61,8 @@ tocopen = false
   title = "Ridetrek Adventure"
   subtitle = "Laode Sidik"
   imageUrl = "/images/laodesidik.webp"
-  imageWidth = 150
-  imageHeight = 150
+  imageWidth = 140
+  imageHeight = 140
   imageTitle = "laodesidik"
 
     [[params.profileMode.buttons]]
