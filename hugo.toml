@@ -1,8 +1,6 @@
 baseURL = "https://ridetrek.id"
 title = "Ridetrek Adventure"
-pagerSize = 5
 theme = "PaperMod"
-paginate = 5
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -12,6 +10,9 @@ pygmentsUseClasses = true
 [minify]
 disableXML = true
 minifyOutput = true
+
+[pagination]
+pagerSize = 5
 
 [params]
 ShowPostThumbnail = true
