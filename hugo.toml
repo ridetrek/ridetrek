@@ -143,6 +143,9 @@ name = "Hitung Octane Booster"
 url = "/octanebooster/"
 weight = 10
 
-
+[markup]
 [markup.highlight]
 noClasses = false
+
+[markup.goldmark]
+unsafe = true
