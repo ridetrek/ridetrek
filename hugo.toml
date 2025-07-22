@@ -152,7 +152,7 @@ weight = 10
 [[menu.main]]
 identifier = "archive"
 name = "archive"
-url = "/archive/"
+url = "/archive"
 weight = 10
 
 [markup]
