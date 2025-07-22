@@ -61,8 +61,8 @@ tocopen = false
   title = "Odemoto Adventure"
   subtitle = "Ride the distance"
   imageUrl = "/images/avatarlaode.jpg"
-  imageWidth = 120
-  imageHeight = 120
+  imageWidth = 150
+  imageHeight = 150
   imageTitle = "laodesidik"
 
     [[params.profileMode.buttons]]
