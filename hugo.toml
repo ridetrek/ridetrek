@@ -151,9 +151,9 @@ weight = 10
 
 [[menu.main]]
 identifier = "archive"
-name = "archive"
+name = "Archive"
 url = "/archive"
-weight = 10
+weight = 40
 
 [markup]
 [markup.highlight]
