@@ -2,6 +2,7 @@ baseURL = "https://ridetrek.id"
 title = "Ridetrek Adventure"
 pagerSize = 5
 theme = "PaperMod"
+paginate = 5
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
