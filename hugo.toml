@@ -78,8 +78,8 @@ tocopen = false
   Content = "Welcome to my blog"
 
   [[params.socialIcons]]
-  name = "x"
-  url = "https://x.com/"
+  name = "Instagram"
+  url = "https://instagram.com/sipapadjohan/"
 
   [[params.socialIcons]]
   name = "stackoverflow"
