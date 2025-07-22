@@ -111,10 +111,7 @@ SiteVerificationTag = "XYZabc"
   hiddenInList = false
   hiddenInSingle = false
 
-  [params.editPost]
-  URL = "https://github.com/ridetrek/ridetrek"
-  Text = "Suggest Changes"
-  appendFilePath = false
+  
 
   [params.fuseOpts]
   isCaseSensitive = false
