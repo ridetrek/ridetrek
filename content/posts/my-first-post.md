@@ -6,4 +6,4 @@ tags = ["touring", "sumatera"]
 categories = ["petualangan"]
 +++
 
-Halo dunia! Ini adalah tulisan pertama saya tentang touring motor.
+Halo dunia motor! Ini adalah tulisan pertama saya tentang touring motor.
