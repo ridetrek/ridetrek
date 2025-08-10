@@ -76,6 +76,10 @@ tocopen = false
     name = "My Ride"
     url = "dashboard"
 
+    [[params.profileMode.buttons]]
+    name = "My Ride"
+    url = "dashboard"
+
   [params.homeInfoParams]
   Title = "Hi there 👋"
   Content = "Welcome to my blog"
