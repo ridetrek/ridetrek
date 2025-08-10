@@ -77,8 +77,8 @@ tocopen = false
     url = "dashboard"
 
     [[params.profileMode.buttons]]
-    name = "My Ride"
-    url = "ridetrekfinances.netlify.app"
+    name = "Expenses"
+    url = "https://ridetrekfinances.netlify.app"
 
   [params.homeInfoParams]
   Title = "Hi there 👋"
