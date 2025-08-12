@@ -78,7 +78,7 @@ tocopen = false
 
     [[params.profileMode.buttons]]
     name = "Expenses"
-    url = "https://ridetrekfinances.netlify.app"
+    url = "https://pengeluaranonom.netlify.app/public/transactions"
 
   [params.homeInfoParams]
   Title = "Hi there 👋"
